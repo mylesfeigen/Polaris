@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#090909" />
+  <meta name="description" content="Explore the idea behind Polaris. Echo and Chrono are in early development: acoustic intelligence and wearable direction for the Australian outdoors." />
+  <title>Early investors — Polaris</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/src/investors.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="investor-header">
+    <a class="brand" href="../" aria-label="Polaris home"><span class="polaris-mark" aria-hidden="true"></span><span>POLARIS</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="investor-navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav id="investor-navigation" aria-label="Main navigation">
+      <a href="../products/">Product</a><a href="./" aria-current="page">Invest</a><a class="pill" href="../#register">Early Access <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="investor-hero">
+      <div class="wrap">
+        <p class="eyebrow">Early investors</p>
+        <h1>A new sense.<br />A new possibility.</h1>
+        <div class="hero-bottom"><p>We’re exploring what acoustic intelligence can bring to hunting. Join the conversation while we build the foundations.</p><a class="text-link" href="../?interest=Investing#register">Start a conversation <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+    <section class="opportunity light-section" aria-labelledby="opportunity-title">
+      <div class="wrap section-grid">
+        <p class="eyebrow">The opportunity</p>
+        <div class="section-content"><h2 id="opportunity-title">The forest has more<br />to tell us.</h2><p>A hunter can hear a call without knowing where it came from. Dense cover, changing terrain and background noise make the picture harder to read.</p><p>Polaris is developing two connected devices to help turn those sounds into useful direction, while keeping the hunter’s attention in the field.</p>
+          <div class="device-summary"><div><h3>Echo</h3><p>An attachable microphone concept for detecting and interpreting animal calls.</p></div><div><h3>Chrono</h3><p>A wearable concept that communicates direction through simple light cues.</p></div></div>
+          <a class="text-link" href="../products/">Explore the technology <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="development light-section" aria-labelledby="development-title">
+      <div class="wrap section-grid">
+        <p class="eyebrow">Our focus</p>
+        <div class="section-content"><h2 id="development-title">What we’re<br />working towards.</h2>
+          <dl class="development-list"><div><dt>Carefully collected data</dt><dd>Gather and label field recordings to support planned AI training and evaluation across different conditions.</dd></div><div><dt>Practical hardware</dt><dd>Develop early Echo and Chrono prototypes around clear feedback, everyday handling and outdoor use.</dd></div><div><dt>Testing in the field</dt><dd>Evaluate the concepts with hunters to understand their usefulness, limitations and the improvements that matter.</dd></div></dl>
+          <p class="stage-note">Polaris is in early development. Hardware, AI models and field validation are still to be developed and tested.</p>
+        </div>
+      </div>
+    </section>
+    <section class="founders light-section" aria-labelledby="founders-title"><div class="wrap section-grid"><p class="eyebrow">The founders</p><div class="section-content"><h2 id="founders-title" class="founder-names">Myles Feigen.<br />Kenrick Chung.</h2><p>Two cofounders building Polaris around a shared interest in hunting, technology and the outdoors.</p></div></div></section>
+    <section class="conversation" aria-labelledby="conversation-title"><div class="wrap"><p class="eyebrow">Let’s talk</p><h2 id="conversation-title">Be part of<br />what comes next.</h2><div class="conversation-bottom"><p>If you’re interested in the idea, our development plans or an early investor conversation, we’d like to hear from you.</p><a class="pill pill-light" href="../?interest=Investing#register">Start a conversation <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="investor-footer wrap"><a class="brand" href="../" aria-label="Polaris home"><span class="polaris-mark" aria-hidden="true"></span><span>POLARIS</span></a><a href="mailto:info@polarishunting.com">info@polarishunting.com</a><p>Echo &amp; Chrono · In development</p></footer>
+  <script>
+    (() => {
+      const button = document.querySelector('.menu-toggle');
+      const navigation = document.querySelector('#investor-navigation');
+      function closeMenu() { button.setAttribute('aria-expanded', 'false'); button.setAttribute('aria-label', 'Open menu'); navigation.classList.remove('is-open'); }
+      button.addEventListener('click', () => { const open = button.getAttribute('aria-expanded') !== 'true'; button.setAttribute('aria-expanded', String(open)); button.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); navigation.classList.toggle('is-open', open); });
+      navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', event => { if (event.key === 'Escape') { const wasOpen = button.getAttribute('aria-expanded') === 'true'; closeMenu(); if (wasOpen) button.focus(); } });
+      document.addEventListener('click', event => { if (!event.target.closest('.investor-header')) closeMenu(); });
+      matchMedia('(min-width: 901px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
+    })();
+  </script>
+</body>
+</html>

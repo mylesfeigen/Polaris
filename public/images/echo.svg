@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="520" viewBox="0 0 720 520" fill="none">
+<defs>
+<linearGradient id="body" x1="120" y1="130" x2="490" y2="410" gradientUnits="userSpaceOnUse"><stop stop-color="#696969"/><stop offset=".18" stop-color="#393939"/><stop offset=".7" stop-color="#212121"/><stop offset="1" stop-color="#111111"/></linearGradient>
+<linearGradient id="side" x1="430" y1="200" x2="580" y2="330" gradientUnits="userSpaceOnUse"><stop stop-color="#4f4f4f"/><stop offset=".45" stop-color="#303030"/><stop offset="1" stop-color="#181818"/></linearGradient>
+<linearGradient id="top" x1="200" y1="115" x2="400" y2="215" gradientUnits="userSpaceOnUse"><stop stop-color="#85836b"/><stop offset=".3" stop-color="#545454"/><stop offset="1" stop-color="#2e2e2e"/></linearGradient>
+<linearGradient id="face" x1="180" y1="225" x2="400" y2="380" gradientUnits="userSpaceOnUse"><stop stop-color="#3f3f3f"/><stop offset="1" stop-color="#1b1b1b"/></linearGradient>
+<radialGradient id="screw"><stop stop-color="#434343"/><stop offset=".65" stop-color="#141414"/><stop offset=".82" stop-color="#93927b"/><stop offset="1" stop-color="#2d2d2d"/></radialGradient>
+<pattern id="mesh" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M0 0h7v7H0z" fill="#0f0f0f"/><circle cx="3.5" cy="3.5" r="1.2" fill="#383838"/></pattern>
+</defs>
+<ellipse cx="363" cy="416" rx="215" ry="17" fill="#0c0c0c" opacity=".6"/>
+<path d="m218 370 27 42 194-15 20-45-43-13Z" fill="#1b1b1b" stroke="#4a4a4a"/>
+<path d="m248 397 8 10 162-13 4-10Z" fill="#3a3a3a"/><path d="m269 399 2 10m30-13 2 10m30-13 2 10m30-13 2 10m30-13 2 10" stroke="#121212" stroke-width="10"/>
+<path d="m146 186 131-72 252 7 66 51-16 159-137 67-260-13-45-45Z" fill="url(#body)" stroke="#747474" stroke-width="2"/>
+<path d="m146 186 131-72 252 7 66 51-151 73-246-14Z" fill="url(#top)" stroke="#797979" stroke-width="1.5"/>
+<path d="m444 245 151-73-16 159-137 67Z" fill="url(#side)" stroke="#5a5a5a" stroke-width="1.5"/>
+<path d="m172 183 109-58 234 7 46 34-125 63-238-12Z" fill="#2a2a2a" stroke="#757575"/>
+<path d="m207 184 88-47 46 2-92 47Zm71 3 92-47 44 1-92 48Zm71 4 94-48 44 1-96 49Z" fill="#5f5f5f"/><path d="m208 180 88-46 45 2m-63 47 92-46 44 1m-65 46 94-45 44 1" stroke="#93917a" stroke-width="2"/>
+<path d="m474 240 93-45-10 113-84 42Z" fill="#222222" stroke="#686868"/>
+<path d="m490 240 55-27m-57 49 55-27m-57 49 55-27m-57 49 55-27" stroke="#3d3d3d" stroke-width="5"/>
+<path d="m163 223 25-21 229 15 24 27-6 116-22 21-229-13-22-25Z" fill="url(#face)" stroke="#878787" stroke-width="2"/>
+<path d="m183 238 20-16 198 12 19 22-4 91-17 14-194-12-21-18Z" fill="url(#mesh)" stroke="#595959"/>
+<path d="m208 238 172 108m-190-86 136 85m-109-108 181 112m-117-109 123 78m-53-74 54 34" stroke="#0e0e0e" stroke-width="13"/>
+<path d="m208 233 172 108m-190-86 136 85m-109-108 181 112m-117-109 123 78m-53-74 54 34" stroke="#555555" stroke-width="7"/>
+<g fill="url(#screw)"><circle cx="180" cy="218" r="8"/><circle cx="419" cy="237" r="8"/><circle cx="180" cy="351" r="8"/><circle cx="418" cy="363" r="8"/></g>
+<g stroke="#141414" stroke-width="2"><path d="m177 215 6 6m-6 0 6-6m233 19 6 6m-6 0 6-6m-245 114 6 6m-6 0 6-6m232 12 6 6m-6 0 6-6"/></g>
+<path d="m265 364 3 8 8 3-8 1-3 8-1-8-8-3 8-1Z" fill="#b4ae8a"/>
+<text x="289" y="381" fill="#b6b391" font-family="Arial,sans-serif" font-size="12" letter-spacing="5" transform="rotate(3 289 381)">POLARIS</text>
+<path d="m565 190 9-4-2 15-9 4Z" fill="#ed903c"/>
+<path d="m149 200 8 142 26 28 230 13" stroke="#afad8e" opacity=".25"/>
+</svg>
