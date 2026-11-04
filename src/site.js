@@ -37,7 +37,7 @@ document.querySelector('#interest-form')?.addEventListener('submit', event => {
   if (!interests.every(value => ['Early access', 'Field testing', 'Investment', 'Industry partnerships', 'Investing', 'General enquiry'].includes(value))) { status.textContent = 'Please choose your area of interest.'; return; }
   const name = String(data.get('name') || '').trim();
   const message = String(data.get('message') || '').trim();
-  const body = `Hi Myles and Kenrick,\n\nI'm interested in Polaris: ${interests.join(' and ')}.\n\nPlease get in touch with me at ${data.get('email')}.\n${message ? `\n${message}\n` : ''}${interests.includes('Early access') ? '\nI would also like to receive development updates about Echo and Chrono.\n' : ''}\nThanks!${name ? `\n${name}` : ''}`;
+  const body = `Hi Polaris team,\n\nI'm interested in Polaris: ${interests.join(' and ')}.\n\nPlease get in touch with me at ${data.get('email')}.\n${message ? `\n${message}\n` : ''}${interests.includes('Early access') ? '\nI would also like to receive development updates about Echo and Chrono.\n' : ''}\nThanks!${name ? `\n${name}` : ''}`;
   const href = `mailto:${contactEmail}?subject=${encodeURIComponent(`Polaris — ${interests.join(' & ')}`)}&body=${encodeURIComponent(body)}`;
   status.replaceChildren(document.createTextNode('Your email draft is ready. Send it from your email app to complete your enquiry. If your app didn’t open, email '));
   const fallback = document.createElement('a');

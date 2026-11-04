@@ -1,0 +1,33 @@
+.development-story.development-path{display:grid;grid-template-columns:1fr 1fr;gap:12%;margin-top:clamp(88px,10vw,144px);padding-top:clamp(48px,6vw,80px);border-top:1px solid #cececb;position:relative}
+.development-overview{align-self:start;position:sticky;top:64px}
+.development-overview>.eyebrow{color:#737373;margin-bottom:24px}
+.development-overview h2{font-size:clamp(38px,3.8vw,60px);font-weight:400;line-height:1.04;letter-spacing:-.04em}
+.development-intro{font-size:17px;line-height:1.5;letter-spacing:-.015em;color:#666;max-width:365px;margin-top:24px}
+.field-notes{margin-top:40px;max-width:440px}
+.field-notes-heading,.field-notes-caption{display:flex;justify-content:space-between;gap:20px;font-size:10px;line-height:1.4;color:#7a7a77}
+.field-notes-heading{padding-top:16px;border-top:1px solid #cececb;text-transform:uppercase;letter-spacing:.08em}
+.field-notes-caption{padding-top:14px;border-top:1px solid #cececb}
+.field-note-stage{color:#242424}
+.development-terrain{display:block;width:100%;height:auto;overflow:hidden;margin-block:10px}
+.terrain-contours{stroke:#d7d7d1;stroke-width:1;fill:none}
+.trail-base{stroke:#c2c2bb;stroke-width:1.5;stroke-dasharray:3 6;fill:none}
+.trail-progress{stroke:#292a27;stroke-width:1.5;fill:none;stroke-dasharray:1;stroke-dashoffset:calc(1 - var(--journey-progress,1));transition:stroke-dashoffset .45s var(--ease)}
+.trail-stop>circle{fill:#f3f2ef;stroke:#8c8c84;stroke-width:1}
+.trail-stop .trail-core{fill:#7a7a73;stroke:none}
+.story-enhanced .trail-stop.is-current>circle{stroke:#242424}
+.story-enhanced .trail-stop.is-current .trail-core,.story-enhanced .trail-stop.is-passed .trail-core{fill:#242424}
+.development-chapters{list-style:none;margin:0;padding:0}
+.development-chapter{position:relative;padding:32px 0 56px 32px;min-height:250px;border-left:1px solid #c9c9c3}
+.development-chapter:last-child{min-height:0;padding-bottom:24px}
+.development-chapter:before{content:'';position:absolute;top:35px;left:-4px;width:7px;height:7px;border-radius:50%;background:#a8a8a0;box-shadow:0 0 0 5px #f3f2ef;transition:background .4s}
+.development-chapter>.eyebrow{color:#66665f;margin-bottom:18px}
+.development-chapter h3{font-size:clamp(27px,2.5vw,38px);font-weight:400;line-height:1.12;letter-spacing:-.035em;max-width:400px;transition:color .45s}
+.development-chapter>p:last-child{font-size:17px;line-height:1.5;letter-spacing:-.015em;max-width:390px;margin-top:20px;color:#666}
+.story-enhanced .development-chapter:not(.is-current) h3{color:#7a7a73}
+.story-enhanced .development-chapter.is-current:before{background:#242424}
+.story-enhanced .development-chapter.is-current h3{color:#242424}
+@media(max-width:1100px){.development-story.development-path{gap:8%}.field-notes{margin-top:32px}.development-overview{top:40px}}
+@media(max-width:800px){.development-story.development-path{grid-template-columns:1fr;gap:40px}.development-overview{position:relative;top:auto;display:grid;grid-template-columns:1fr 1fr;gap:0 32px}.development-overview>.eyebrow,.development-overview h2,.development-intro{grid-column:1}.field-notes{grid-column:2;grid-row:1/4;align-self:center;margin:0}.development-chapters{display:grid;grid-template-columns:1fr 1fr;gap:32px}.development-chapter,.development-chapter:last-child{padding:24px 0 10px 24px;min-height:0}.development-chapter:before{top:27px}.development-chapter h3{font-size:28px}.development-chapter>p:last-child{font-size:16px}.development-chapter>.eyebrow{margin-bottom:14px}}
+@media(max-width:580px){.development-story.development-path{margin-top:72px;padding-top:40px;gap:36px}.development-overview{display:block}.development-overview h2{font-size:40px}.development-intro{font-size:16px;max-width:330px;margin-top:20px}.field-notes{margin-top:28px;max-width:360px}.development-terrain{max-height:230px}.development-chapters{display:block}.development-chapter,.development-chapter:last-child{padding:20px 0 42px 26px}.development-chapter:last-child{padding-bottom:0}.development-chapter:before{top:23px}.development-chapter h3{font-size:29px}.development-chapter>p:last-child{margin-top:16px}.field-notes-heading,.field-notes-caption{font-size:9px}}
+@media(max-height:760px) and (min-width:801px){.development-overview{position:relative;top:auto}.field-notes{max-width:360px}}
+@media(prefers-reduced-motion:reduce){.development-overview{position:relative;top:auto}.trail-progress,.development-chapter h3,.development-chapter:before{transition:none}.story-enhanced .development-chapter:not(.is-current) h3{color:#242424}}

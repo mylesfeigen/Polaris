@@ -3,63 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#090909" />
-  <meta name="description" content="Explore the idea behind Polaris. Echo and Chrono are in early development: acoustic intelligence and wearable direction for the Australian outdoors." />
-  <title>Early investors — Polaris</title>
+  <meta name="theme-color" content="#f7f7f4" />
+  <meta name="description" content="Follow the development of Polaris. Two founders exploring acoustic intelligence for hunting, with Echo and Chrono. Register your interest in our journey." />
+  <title>Follow the journey — Polaris</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/fonts/fonts.css" />
   <link rel="stylesheet" href="/src/investors.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="investor-header">
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol></defs></svg>
+  <header class="site-header investor-header">
     <a class="brand" href="../" aria-label="Polaris home"><span class="polaris-mark" aria-hidden="true"></span><span>POLARIS</span></a>
-    <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="investor-navigation" aria-expanded="false"><span></span><span></span></button>
-    <nav id="investor-navigation" aria-label="Main navigation">
-      <a href="../products/">Shop</a><a href="./" aria-current="page">Invest</a><a class="pill" href="../#register">Early Access <span aria-hidden="true">↗</span></a>
-    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav id="navigation" aria-label="Main navigation"><a href="../products/">Shop</a><a href="./" aria-current="page">Invest</a><a class="pill nav-cta" href="../#register">Early Access <svg aria-hidden="true"><use href="#arrow"/></svg></a></nav>
   </header>
   <main id="main">
-    <section class="investor-hero">
-      <div class="wrap">
-        <p class="eyebrow">Early investors</p>
-        <h1>A new sense.<br />A new possibility.</h1>
-        <div class="hero-bottom"><p>We’re not looking for your money right now. We’re building something we believe in, and we’re inviting you to follow the journey.</p><a class="text-link" href="../?interest=Investment#register">Follow the journey <span aria-hidden="true">↗</span></a></div>
-      </div>
+    <section class="investor-hero wrap" aria-labelledby="investor-title">
+      <div class="hero-intro"><p class="eyebrow">An invitation to see what comes next</p><h1 id="investor-title">The next chapter<br/>starts in the field.</h1></div>
+      <div class="hero-bottom"><p>We’re two founders exploring a new kind of hunting tool. Built around sound. Shaped by the people who know the outdoors.</p><a class="pill pill-outline" href="#investor-register">Follow our progress <svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
+      <div class="hero-footnote"><span>Echo &amp; Chrono</span><span>Early development</span><span>Australian outdoors</span></div>
     </section>
-    <section class="opportunity light-section" aria-labelledby="opportunity-title">
-      <div class="wrap section-grid">
-        <p class="eyebrow">The opportunity</p>
-        <div class="section-content"><h2 id="opportunity-title">The forest has more<br />to tell us.</h2><p>A hunter can hear a call without knowing where it came from. Dense cover, changing terrain and background noise make the picture harder to read.</p><p>Polaris is developing two connected devices to help turn those sounds into useful direction, while keeping the hunter’s attention in the field.</p>
-          <div class="device-summary"><div><h3>Echo</h3><p>An attachable microphone concept for detecting and interpreting animal calls.</p></div><div><h3>Chrono</h3><p>A wearable concept that communicates direction through simple light cues.</p></div></div>
-          <a class="text-link" href="../products/">Explore the technology <span aria-hidden="true">↗</span></a>
-        </div>
+
+    <section class="field-intelligence" aria-labelledby="opportunity-title">
+      <div class="wrap opportunity-grid">
+        <div class="opportunity-copy reveal"><p class="eyebrow">The idea</p><h2 id="opportunity-title">The forest has<br/>more to tell us.</h2><p>Calls can travel beyond what a hunter can see. Knowing what made a sound, and where it came from, could make that information far more useful.</p><p>We’re developing acoustic intelligence to support the judgement hunters already bring to the field.</p></div>
+        <figure class="acoustic-field reveal" aria-labelledby="field-caption">
+          <svg class="field-diagram" viewBox="0 0 560 410" role="img" aria-label="Conceptual diagram showing a sound travelling across a forested valley towards a listening point">
+            <defs><linearGradient id="terrain-fade" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#747773"/><stop offset="1" stop-color="#252725"/></linearGradient></defs>
+            <g fill="none" stroke="url(#terrain-fade)" stroke-width="1">
+              <path d="M0 257 34 233 59 239 88 215 113 223 157 182 189 198 214 170 248 191 276 178 310 201 344 177 371 188 405 164 442 187 466 180 508 209 560 186"/>
+              <path d="M0 287 41 265 63 269 91 250 119 261 150 238 189 250 222 226 257 245 287 232 328 255 363 228 395 244 427 221 467 244 504 232 560 258"/>
+              <path d="M0 322 37 306 77 314 109 292 153 308 181 289 221 302 253 281 297 299 327 282 364 305 395 290 439 312 471 291 515 310 560 298"/>
+              <path d="M0 357 42 343 83 353 118 338 161 353 208 336 245 350 289 332 325 348 365 336 408 354 445 338 485 356 523 342 560 356"/>
+              <path d="M0 391 57 384 97 391 145 382 191 391 240 378 286 390 337 379 385 391 440 381 483 392 521 383 560 394"/>
+            </g>
+            <g class="sound-rings" fill="none" stroke="#bfc4bc" stroke-width="1"><circle cx="367" cy="155" r="26"/><circle cx="367" cy="155" r="53"/><circle cx="367" cy="155" r="80"/></g>
+            <path d="m367 155-232 150" fill="none" stroke="#dce1d8" stroke-width="1" stroke-dasharray="3 7"/>
+            <circle cx="367" cy="155" r="4" fill="#fff"/><circle cx="135" cy="305" r="4" fill="#fff"/><circle cx="135" cy="305" r="13" fill="none" stroke="#fff" stroke-width="1"/>
+            <path d="M367 139v-9m0 50v-9m-16-16h-9m50 0h-9M135 279v-7m0 59v7m-26-33h-7m59 0h7" fill="none" stroke="#a2a89f" stroke-width="1"/>
+          </svg>
+          <figcaption id="field-caption"><span>From sound to awareness</span><span>Concept, in development</span></figcaption>
+        </figure>
       </div>
+      <div class="device-summary wrap reveal"><div><span class="eyebrow">Listen</span><h3>Echo</h3><p>An attachable microphone being developed to recognise deer calls and locate their source.</p></div><div><span class="eyebrow">Understand</span><h3>Chrono</h3><p>A wearable being developed to turn directional information into quiet, intuitive light cues.</p></div><a class="text-link" href="../products/">Explore the technology <svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
     </section>
-    <section class="development light-section" aria-labelledby="development-title">
-      <div class="wrap section-grid">
-        <p class="eyebrow">Our focus</p>
-        <div class="section-content"><h2 id="development-title">What we’re<br />working towards.</h2>
-          <dl class="development-list"><div><dt>Carefully collected data</dt><dd>Gather and label field recordings to support planned AI training and evaluation across different conditions.</dd></div><div><dt>Practical hardware</dt><dd>Develop early Echo and Chrono prototypes around clear feedback, everyday handling and outdoor use.</dd></div><div><dt>Testing in the field</dt><dd>Evaluate the concepts with hunters to understand their usefulness, limitations and the improvements that matter.</dd></div></dl>
-          <p class="stage-note">Polaris is in early development. Hardware, AI models and field validation are still to be developed and tested.</p>
-        </div>
-      </div>
+
+    <section class="building-section wrap" aria-labelledby="building-title">
+      <div class="building-heading reveal"><p class="eyebrow">How we’re building</p><h2 id="building-title">Listen carefully.<br/>Test honestly.<br/>Keep improving.</h2><p>We’re at the beginning. Each stage is about learning what makes this tool valuable in real conditions.</p></div>
+      <div class="building-details reveal"><article><h3>Start with the field</h3><p>Listen to hunters and gather carefully labelled recordings to understand the sounds and conditions that matter.</p></article><article><h3>Prove the idea</h3><p>Develop and test early hardware and AI models, then use field feedback to guide the next iteration.</p></article><article><h3>Build with people</h3><p>Invite early users and industry partners into the process before taking the next step.</p></article><a class="text-link" href="../#development">Follow the development path <svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
     </section>
-    <section class="founders light-section" aria-labelledby="founders-title"><div class="wrap section-grid"><p class="eyebrow">The founders</p><div class="section-content"><h2 id="founders-title" class="founder-names">Myles Feigen.<br />Kenrick Chung.</h2><p>Two cofounders building Polaris around a shared interest in hunting, technology and the outdoors.</p></div></div></section>
-    <section class="conversation" aria-labelledby="conversation-title"><div class="wrap"><p class="eyebrow">Let’s talk</p><h2 id="conversation-title">Be part of<br />what comes next.</h2><div class="conversation-bottom"><p>We’re Myles and Kenrick. If our idea resonates with you, follow our progress or contact us directly at <a href="mailto:info@polarishunting.com">info@polarishunting.com</a>. We’d like to hear your perspective.</p><a class="pill pill-light" href="../?interest=Investment#register">Follow the journey <span aria-hidden="true">↗</span></a></div></div></section>
+
+    <section class="registration" id="investor-register" aria-labelledby="registration-title"><div class="registration-layout wrap">
+      <div class="registration-copy reveal"><p class="eyebrow">Investors &amp; industry partners</p><h2 id="registration-title">Follow the idea.<br/>Help shape<br/>what’s next.</h2><p>We’re not looking for your money right now. We’re building something we believe in, and we’re inviting you to follow the journey.</p><div class="direct-contact"><span>Prefer a conversation with the founders?</span><a class="contact-email" href="mailto:info@polarishunting.com">info@polarishunting.com</a></div></div>
+      <form class="registration-form reveal" id="interest-form"><p class="form-intro">Stay close to the development.</p><div class="form-field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required aria-describedby="registration-note"/></div><div class="form-field"><label for="interest">I’m interested in</label><select id="interest" name="interest"><option value="Investment">Investment</option><option value="Industry partnerships">Industry partnerships</option><option value="Early access">Early access</option><option value="Field testing">Field testing</option></select></div><button class="pill pill-light" type="submit">Register interest <svg aria-hidden="true"><use href="#arrow"/></svg></button><p class="form-note" id="registration-note">Opens your email app. Send the draft to get in touch.</p><p id="form-status" role="status" aria-live="polite"></p></form>
+    </div></section>
   </main>
-  <footer class="investor-footer wrap"><a class="brand" href="../" aria-label="Polaris home"><span class="polaris-mark" aria-hidden="true"></span><span>POLARIS</span></a><a href="mailto:info@polarishunting.com">info@polarishunting.com</a><p>Echo &amp; Chrono · In development</p></footer>
-  <script>
-    (() => {
-      const button = document.querySelector('.menu-toggle');
-      const navigation = document.querySelector('#investor-navigation');
-      function closeMenu() { button.setAttribute('aria-expanded', 'false'); button.setAttribute('aria-label', 'Open menu'); navigation.classList.remove('is-open'); }
-      button.addEventListener('click', () => { const open = button.getAttribute('aria-expanded') !== 'true'; button.setAttribute('aria-expanded', String(open)); button.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); navigation.classList.toggle('is-open', open); });
-      navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-      document.addEventListener('keydown', event => { if (event.key === 'Escape') { const wasOpen = button.getAttribute('aria-expanded') === 'true'; closeMenu(); if (wasOpen) button.focus(); } });
-      document.addEventListener('click', event => { if (!event.target.closest('.investor-header')) closeMenu(); });
-      matchMedia('(min-width: 901px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
-    })();
-  </script>
+  <footer class="investor-footer"><div class="footer-main wrap"><a class="brand" href="../" aria-label="Polaris home"><span class="polaris-mark" aria-hidden="true"></span><span>POLARIS</span></a><a href="../">Back to home <svg aria-hidden="true"><use href="#arrow"/></svg></a></div><div class="footer-bottom wrap"><span>© <span id="year"></span> Polaris</span><span>Echo &amp; Chrono · In development</span><button id="privacy-button" type="button">Privacy</button></div></footer>
+  <dialog id="privacy-dialog" aria-labelledby="privacy-title"><button class="dialog-close" type="button" aria-label="Close privacy information">×</button><p class="eyebrow">Your information</p><h2 id="privacy-title">Privacy, simply.</h2><p>This site does not use analytics or marketing cookies. The form prepares a message in your email app. Your details reach Polaris only when you send that email.</p><p>We use enquiry details to respond to your message. You can ask us to stop contacting you or delete your enquiry by emailing <a class="contact-email" href="mailto:info@polarishunting.com">info@polarishunting.com</a>.</p><p>Your hosting provider may process basic access logs to deliver and secure this website.</p></dialog>
+  <script type="module" src="/src/investors.js"></script>
 </body>
 </html>

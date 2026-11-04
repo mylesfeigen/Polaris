@@ -1,6 +1,8 @@
 import './site.js';
 import './text-reveal.js';
 import './mission-transition.js';
+import './development-story.js';
+import './development-story.css';
 const interest = document.querySelector('#interest');
 const pageURL = new URL(window.__POLARIS_PREVIEW_URL || location.href);
 const requestedInterest = pageURL.searchParams.get('interest') === 'Investing'

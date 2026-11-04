@@ -1,22 +1,19 @@
-// Native sticky positioning creates the panel reveal without wheel handlers,
-// artificial scroll distance or a pinned reading section.
-const sequence = document.querySelector('.mission-sequence');
-const solution = sequence?.querySelector('#solution');
-if (sequence && solution) {
+// The arriving mission lifts over the hero. Native sticky positioning keeps
+// the photograph still, without intercepting wheel/touch input or pinning text.
+const sequence = document.querySelector('.hero-mission-sequence');
+const hero = sequence?.querySelector('.landscape-hero');
+if (sequence && hero) {
   const preference = matchMedia('(prefers-reduced-motion: reduce)');
   function updateReveal() {
-    // A panel taller than the viewport must scroll normally so its first lines
-    // stay reachable on small screens, at larger text sizes and when zoomed in.
-    const fits = solution.offsetHeight <= document.documentElement.clientHeight;
+    // Tall content must stay in normal flow at small heights / larger zoom.
+    const fits = hero.offsetHeight <= document.documentElement.clientHeight + 1;
     sequence.classList.toggle('mission-reveal', !preference.matches && fits);
   }
-  new ResizeObserver(updateReveal).observe(solution);
-  solution.addEventListener('focusin', event => {
-    const mission = sequence.querySelector('#mission');
-    // A sticky control can already be inside the viewport yet still covered
-    // by the outgoing panel. Reveal it when reached with the keyboard.
-    if (event.target.getBoundingClientRect().top < mission.getBoundingClientRect().bottom) {
-      scrollTo({ top: scrollY + mission.getBoundingClientRect().bottom, behavior: 'instant' });
+  new ResizeObserver(updateReveal).observe(hero);
+  hero.addEventListener('focusin', event => {
+    const missionTop = sequence.querySelector('#mission').getBoundingClientRect().top;
+    if (event.target.getBoundingClientRect().bottom > missionTop) {
+      scrollTo({ top: scrollY + sequence.getBoundingClientRect().top, behavior: 'instant' });
     }
   });
   addEventListener('resize', updateReveal, { passive: true });

@@ -66,11 +66,13 @@ function initialiseStatement() {
     // Reveal as the copy itself crosses the viewport. Its container stays in
     // normal document flow: no pinned stage or extra scroll distance is needed.
     const bounds = copy.getBoundingClientRect();
-    const start = innerHeight * .85;
-    const end = innerHeight * .35;
+    // Finish while the last line is comfortably visible, before the following
+    // section. Taller mobile copy reveals progressively at reading height.
+    const start = innerHeight * .95;
+    const end = innerHeight * .88;
     const target = animated ? clamp((start - bounds.top) / (bounds.height + start - end)) : 1;
     section.dataset.revealTarget = target.toFixed(4);
-    if (needsSnap || !animated || !inView) {
+    if (needsSnap || !animated || !inView || target === 1) {
       renderedProgress = target;
       needsSnap = false;
     } else {
