@@ -34,7 +34,7 @@ document.querySelector('#interest-form')?.addEventListener('submit', event => {
   const selected = String(data.get('interest') || '');
   const interests = selected === 'Both' ? ['Early access', 'Investing'] : [selected];
   const status = document.querySelector('#form-status');
-  if (!interests.every(value => ['Early access', 'Investing', 'General enquiry'].includes(value))) { status.textContent = 'Please choose your area of interest.'; return; }
+  if (!interests.every(value => ['Early access', 'Field testing', 'Investment', 'Industry partnerships', 'Investing', 'General enquiry'].includes(value))) { status.textContent = 'Please choose your area of interest.'; return; }
   const name = String(data.get('name') || '').trim();
   const message = String(data.get('message') || '').trim();
   const body = `Hi Myles and Kenrick,\n\nI'm interested in Polaris: ${interests.join(' and ')}.\n\nPlease get in touch with me at ${data.get('email')}.\n${message ? `\n${message}\n` : ''}${interests.includes('Early access') ? '\nI would also like to receive development updates about Echo and Chrono.\n' : ''}\nThanks!${name ? `\n${name}` : ''}`;
