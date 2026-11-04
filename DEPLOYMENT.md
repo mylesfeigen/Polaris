@@ -1,7 +1,9 @@
 # Polaris preview hosting
 
-The landing page is `/`. Its Product link opens `/products/`, restored from the
+The landing page is `/`. Its Shop link opens `/products/`, restored from the
 user-selected `/workspace/design-notes/rifle-studio/polaris-free-scroll-preview.html`.
+The saved rifle experience is preserved, with updated site navigation and an
+explicit Back to home link.
 Invest opens `/investors/`. Early Access and Register Interest reach `/#register`.
 
 The site is ready for a static host. `netlify.toml` sets the build command to
@@ -15,7 +17,11 @@ The site is ready for a static host. `netlify.toml` sets the build command to
    Publish directory: `dist`. These settings are also in `netlify.toml`.
 4. Start the deployment. Netlify provides an HTTPS URL after the build succeeds.
 
-The site has not yet been deployed to Netlify from this workspace.
+The user connected this branch to Netlify. The stable site address is
+`https://tangerine-nasturtium-ea7810.netlify.app/`. URLs with a deployment ID before
+`--tangerine-nasturtium-ea7810.netlify.app` are fixed snapshots and do not show later
+updates. Pushes to the configured branch can trigger Netlify builds; confirm the
+latest build in Netlify's deployment dashboard.
 Workspace HTML and image links are not a reliable preview in this chat client.
 The registration form prepares an email draft; it does not save submissions to a
 database or send email automatically.

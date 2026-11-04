@@ -8,3 +8,7 @@
 @media(max-width:700px){.statement-stage{padding:40px 24px}.statement-copy{font-size:24px;letter-spacing:-.025em}.statement-paragraph{line-height:1.2}}
 @media(max-height:600px){.statement-stage{padding-block:32px}}
 @media(prefers-reduced-motion:reduce){.statement-enhanced .statement-word{color:#fff}}
+.statement-light{background:#fff;color:#000;scroll-margin-top:0}
+.statement-light.statement-enhanced .statement-word{color:rgb(calc(170 - 170 * var(--word-progress,1)),calc(170 - 170 * var(--word-progress,1)),calc(170 - 170 * var(--word-progress,1)))}
+.statement-light.statement-static .statement-word{color:#000}
+@media(prefers-reduced-motion:reduce){.statement-light .statement-word{color:#000}}
